@@ -34,32 +34,32 @@ h1 {
 h2 {
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: var(--fw-bold);
   color: var(--crl-primary-orange);
-  padding: 12px;
+  padding: 10px 16px;
   margin: 8px auto;
   border-radius: 24px;
   background-color: hsla(217, 12%, 63%, 0.175);
 }
 
 p {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: var(--fw-semi-bold);
   color: var(--crl-light-grey);
 }
 
 .container {
-  padding: 25px;
+  padding: 32px;
   min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .container .card {
-  min-width: 350px;
+  min-width: 320px;
   max-width: 400px;
-  padding: 32px 24px;
+  padding: 26px 24px;
   border-radius: 16px;
   background: var(--crl-dark-blue);
   display: flex;
@@ -67,10 +67,11 @@ p {
   gap: 18px;
 }
 .container .card h1 {
-  margin-top: 12px;
+  margin-top: 0px;
 }
 .container .card p {
   line-height: 1.5;
+  letter-spacing: -0.02ch;
 }
 .container .card .stars {
   display: flex;
@@ -78,7 +79,7 @@ p {
   gap: 12px;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 12px;
+  padding: 10px;
   border-radius: 18px;
   background-color: hsla(217, 12%, 63%, 0.175);
 }
@@ -87,6 +88,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  margin-top: 10px;
 }
 .container .card .ratings .rating {
   position: relative;
@@ -150,8 +152,9 @@ p {
 #thankyou-card {
   text-align: center;
 }
-#thankyou-card .thankyou-note {
-  margin-bottom: 8px;
+#thankyou-card img {
+  width: 150px;
+  margin: 0 auto;
 }
 
 .attribution p {
@@ -159,4 +162,24 @@ p {
   width: fit-content;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container .card {
+    border-radius: 24px;
+    padding: 36px 28px;
+  }
+  .container .card h1 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .container .card p {
+    font-size: 15px;
+  }
+  .container #thankyou-card h1 {
+    margin-top: 6px;
+  }
+  .container #thankyou-card .thankyou-note {
+    font-size: 15.5px;
+  }
 }/*# sourceMappingURL=style.css.map */
